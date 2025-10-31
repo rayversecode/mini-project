@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends - Rabbit and Stitch</title>
+    
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    
+
+    <link rel="stylesheet" href="trends.css">
+</head>
+<body>
+
+    <div class="studio-container">
+       
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Rabbit and Stitch</h1>
+            </div>
+            <nav class="sidebar-nav">
+               <ul>
+                    <li><a href="dashboard.html"><i data-lucide="layout-dashboard"></i> <span class="nav-text">Dashboard</span></a></li>
+                    <li><a href="#" class="active"><i data-lucide="plus-square"></i> <span class="nav-text">New Design</span></a></li>
+                    <li><a href="inspiration.html"><i data-lucide="lightbulb"></i> <span class="nav-text">Inspirations</span></a></li>
+                    <li><a href="trends.html"><i data-lucide="trending-up"></i> <span class="nav-text">Trends</span></a></li>
+                    <li><a href="layouts.html"><i data-lucide="layout-template"></i> <span class="nav-text">Layouts</span></a></li>
+                    <li><a href="portfolio.html"><i data-lucide="briefcase"></i> <span class="nav-text">Portfolio</span></a></li>
+                    <li><a href="resources.html"><i data-lucide="book"></i> <span class="nav-text">Resources</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        
+
+
+
+
+        <div class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="sidebar-toggle" id="sidebar-toggle">
+                        <i data-lucide="menu"></i>
+                    </button>
+                    <h2>Trends</h2>
+                </div>
+                <div class="user-profile">
+                    <a href="#">Logout</a>
+                </div>
+            </header>
+
+            
+
+
+
+            <main class="trends-content">
+                
+
+                <div class="trends-filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Women</button>
+                    <button class="filter-btn">Men</button>
+                    <button class="filter-btn">Streetwear</button>
+                    <button class="filter-btn">Haute Couture</button>
+                    <button class="filter-btn">Accessories</button>
+                </div>
+
+                
+
+                <div class="controls-bar">
+                    <div class="search-bar">
+                        <i data-lucide="search"></i>
+                        <input type="text" placeholder="Search trends...">
+                    </div>
+                    <div class="sort-options">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by">
+                            <option value="latest">Latest</option>
+                            <option value="liked">Most Liked</option>
+                            <option value="popular">Popular</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+
+                <div class="trends-analysis">
+                    <div class="chart-container">
+                        <h3>Trending Colors - Q4 2025</h3>
+                        <canvas id="trendingColorsChart"></canvas>
+                    </div>
+                    <div class="analysis-text">
+                        <h3>The Rise of 'Digital Lavender'</h3>
+                        <p>This quarter sees a significant rise in 'Digital Lavender', a soothing and optimistic hue. Our AI analysis predicts this color will dominate Spring/Summer 2026 collections, followed closely by 'Sundial' yellow and 'Verdigris' green.</p>
+                        <a href="#" class="btn-more">Read Full Report</a>
+                    </div>
+                </div>
+
+               
+
+
+                <div class="trends-feed">
+                    
+
+                    <div class="trend-card featured">
+                        <img src="https://placehold.co/800x450/333/fff?text=Featured+Trend" alt="Featured Trend">
+                        <div class="card-content">
+                            <span class="category">Haute Couture</span>
+                            <h3>The New Minimalism: Structure & Form</h3>
+                            <p>Designers are stripping back, focusing on impeccable tailoring and strong silhouettes. Discover how "quiet luxury" is being redefined on the runway...</p>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="trend-card">
+                        <img src="https://placehold.co/400x300/555/fff?text=Streetwear" alt="Streetwear Trend">
+                        <div class="card-content">
+                            <span class="category">Streetwear</span>
+                            <h3>Utility Wear Evolved</h3>
+                            <p>Cargo pants and utility vests get a high-fashion update with new fabrics and cuts.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="trend-card">
+                        <img src="https://placehold.co/400x300/777/fff?text=Accessories" alt="Accessories Trend">
+                        <div class="card-content">
+                            <span class="category">Accessories</span>
+                            <h3>Bio-Materials: The Future of Footwear</h3>
+                            <p>From mushroom leather to algae-based soles, see the innovative materials changing the game.</p>
+                        </div>
+                    </div>
+
+                    <div class="trend-card">
+                        <img src="https://placehold.co/400x300/999/fff?text=Menswear" alt="Menswear Trend">
+                        <div class="card-content">
+                            <span class="category">Men</span>
+                            <h3>The Modern Dandy</h3>
+                            <p>A resurgence of soft, romantic tailoring for men, blending classic patterns with modern ease.</p>
+                        </div>
+                    </div>
+
+                    <div class="trend-card">
+                        <img src="https://placehold.co/400x300/bbb/fff?text=Womenswear" alt="Womenswear Trend">
+                        <div class="card-content">
+                            <span class="category">Women</span>
+                            <h3>Sheer Genius: Layering Transparency</h3>
+                            <p>How designers are using sheer fabrics for sophisticated, multi-dimensional looks.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    
+
+    
+
+
+
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rabbit and Stitch. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    
+
+
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
+
+    <script src="trends.js"></script>
+
+</body>
+</html>

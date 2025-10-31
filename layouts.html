@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts - Rabbit and Stitch</title>
+    
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    
+
+    <link rel="stylesheet" href="layouts.css">
+</head>
+<body>
+
+    <div class="studio-container">
+        
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Rabbit and Stitch</h1>
+            </div>
+            <nav class="sidebar-nav">
+               <ul>
+                    <li><a href="dashboard.html"><i data-lucide="layout-dashboard"></i> <span class="nav-text">Dashboard</span></a></li>
+                    <li><a href="#" class="active"><i data-lucide="plus-square"></i> <span class="nav-text">New Design</span></a></li>
+                    <li><a href="inspiration.html"><i data-lucide="lightbulb"></i> <span class="nav-text">Inspirations</span></a></li>
+                    <li><a href="trends.html"><i data-lucide="trending-up"></i> <span class="nav-text">Trends</span></a></li>
+                    <li><a href="layouts.html"><i data-lucide="layout-template"></i> <span class="nav-text">Layouts</span></a></li>
+                    <li><a href="portfolio.html"><i data-lucide="briefcase"></i> <span class="nav-text">Portfolio</span></a></li>
+                    <li><a href="resources.html"><i data-lucide="book"></i> <span class="nav-text">Resources</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        
+
+        <div class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="sidebar-toggle" id="sidebar-toggle">
+                        <i data-lucide="menu"></i>
+                    </button>
+                    <h2>Layouts Studio</h2>
+                </div>
+                <div class="user-profile">
+                    <a href="#">Logout</a>
+                </div>
+            </header>
+
+            <div class="layout-studio">
+                
+
+                <aside class="components-panel">
+
+                    <div class="component-tabs">
+                        <button class="tab-btn active" data-tab="templates">Templates</button>
+                        <button class="tab-btn" data-tab="components">Components</button>
+                        <button class="tab-btn" data-tab="patterns">Patterns</button>
+                    </div>
+
+
+
+                    <div class="component-list-wrapper">
+                        
+                        <div class="component-list active" id="tab-templates">
+                            <div class_message="Drag a base template onto the canvas"></div>
+
+                            <div class="component-item" draggable="true" data-type="template" data-name="T-Shirt">
+                                <i data-lucide="shirt"></i>
+                                <span>T-Shirt</span>
+                            </div>
+
+                            <div class="component-item" draggable="true" data-type="template" data-name="Dress">
+                                <i data-lucide="user"></i> 
+                                <span>Dress</span>
+                            </div>
+
+                            <div class="component-item" draggable="true" data-type="template" data-name="Skirt">
+                                <i data-lucide="move-3d"></i> 
+                                <span>Skirt</span>
+                            </div>
+
+                            <div class="component-item" draggable="true" data-type="template" data-name="Pants">
+                                <i data-lucide="move-horizontal"></i> 
+                                <span>Pants</span>
+                            </div>
+
+                        </div>
+                        
+
+
+                        <div class="component-list" id="tab-components">
+                            <div class_message="Drag a component onto a template"></div>
+                            <div class="component-item" draggable="true" data-type="component" data-name="Puff Sleeve">
+                                <i data-lucide="chevrons-right-left"></i>
+                                <span>Puff Sleeve</span>
+                            </div>
+                            <div class="component-item" draggable="true" data-type="component" data-name="Peter Pan Collar">
+                                <i data-lucide="chevron-down"></i>
+                                <span>Peter Pan Collar</span>
+                            </div>
+                            <div class="component-item" draggable="true" data-type="component" data-name="Patch Pocket">
+                                <i data-lucide="square"></i>
+                                <span>Patch Pocket</span>
+                            </div>
+                        </div>
+                        
+
+
+                        <div class="component-list" id="tab-patterns">
+                            <div class_message="Drag a pattern onto a component"></div>
+                            <div class="component-item" draggable="true" data-type="pattern" data-name="Stripes">
+                                <i data-lucide="minus"></i>
+                                <span>Stripes</span>
+                            </div>
+                            <div class="component-item" draggable="true" data-type="pattern" data-name="Floral">
+                                <i data-lucide="flower"></i>
+                                <span>Floral</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+               
+
+                <div class="canvas-wrapper">
+                    <div class="canvas-area" id="canvas-area">
+                        <div class="silhouette-placeholder">
+                            <i data-lucide="user-plus"></i>
+                            <p>Drag a template here to begin</p>
+                        </div>
+                        <div id="dropped-items-list"></div>
+                    </div>
+                </div>
+
+                
+
+                <aside class="preview-panel">
+                    <h4>Preview</h4>
+                    <button class="preview-btn active">
+                        <i data-lucide="maximize"></i>
+                        <span>2D Preview</span>
+                    </button>
+                    <button class="preview-btn">
+                        <i data-lucide="rotate-3d"></i>
+                        <span>3D Mockup</span>
+                    </button>
+                    <div class="preview-window">
+                        <p>Preview will appear here</p>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rabbit and Stitch. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    
+    <script src="layouts.js"></script>
+
+</body>
+</html>

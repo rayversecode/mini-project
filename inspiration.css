@@ -1,0 +1,300 @@
+:root {
+    --color-primary: #2A4365;
+    --color-secondary: #F0F4F8;
+    --color-dark: #333333;
+    --color-light: #FFFFFF;
+    --color-footer: #2C3E50;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Raleway', sans-serif;
+    --border-radius: 8px;
+    --sidebar-width: 260px;
+    --sidebar-width-collapsed: 80px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; 
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-dark);
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.studio-container {
+    display: flex;
+    flex-grow: 1;
+    height: calc(100vh - 70px); 
+}
+
+
+
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--color-light);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease-in-out;
+    border-right: 1px solid #e0e0e0;
+    flex-shrink: 0;
+}
+.sidebar-header {
+    margin-bottom: 40px;
+}
+.sidebar-header h1 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    white-space: nowrap;
+}
+.sidebar-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    color: var(--color-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
+}
+.sidebar-nav a:hover, .sidebar-nav a.active {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+.sidebar.collapsed {
+    width: var(--sidebar-width-collapsed);
+}
+.sidebar.collapsed .sidebar-header h1,
+.sidebar.collapsed .nav-text {
+    opacity: 0;
+    width: 0;
+    pointer-events: none;
+}
+.sidebar.collapsed .sidebar-nav a {
+    justify-content: center;
+}
+
+
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 24px;
+    background-color: var(--color-light);
+    border-bottom: 1px solid #e0e0e0;
+    flex-shrink: 0;
+}
+.header-left { display: flex; align-items: center; gap: 15px; }
+.sidebar-toggle { background: none; border: none; cursor: pointer; }
+
+
+
+.inspiration-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 24px;
+}
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+}
+
+
+
+.inspiration-grid {
+    column-count: 4;
+    column-gap: 15px;
+}
+
+.inspiration-card {
+    width: 100%;
+    break-inside: avoid;
+    margin-bottom: 15px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    cursor: pointer;
+    background-color: var(--color-light);
+}
+
+.inspiration-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.inspiration-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    padding: 20px 15px 15px;
+    color: white;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.inspiration-card:hover .card-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-overlay h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.card-overlay p {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.save-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+    color: var(--color-dark);
+}
+
+.inspiration-card:hover .save-btn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.save-btn:hover {
+    background: white;
+}
+
+.save-btn.saved i {
+    fill: #E11D48; 
+    color: #E11D48;
+}
+
+
+
+.main-footer {
+    background-color: var(--color-footer);
+    color: white;
+    padding: 20px 0; 
+    text-align: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+}
+.footer-bottom p {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    opacity: 0.8;
+}
+
+
+
+@media (max-width: 1200px) {
+    .inspiration-grid { column-count: 3; }
+}
+
+@media (max-width: 992px) {
+    .inspiration-grid { column-count: 2; }
+    .sidebar { width: var(--sidebar-width-collapsed); }
+    .sidebar .sidebar-header h1,
+    .sidebar .nav-text {
+        opacity: 0;
+        width: 0;
+        pointer-events: none;
+    }
+    .sidebar .sidebar-nav a { justify-content: center; }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: absolute;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        z-index: 1000;
+        transition: left 0.3s ease-in-out;
+        width: var(--sidebar-width);
+    }
+    .sidebar.toggled {
+        left: 0;
+    }
+    .sidebar.toggled .sidebar-header h1,
+    .sidebar.toggled .nav-text {
+        opacity: 1;
+        width: auto;
+        pointer-events: all;
+    }
+    .sidebar.toggled .sidebar-nav a { justify-content: flex-start; }
+}
+
+@media (max-width: 576px) {
+    .inspiration-grid { column-count: 1; }
+}

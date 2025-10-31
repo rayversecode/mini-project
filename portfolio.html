@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Rabbit and Stitch</title>
+    
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    
+
+
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <div class="studio-container">
+
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Rabbit and Stitch</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i data-lucide="layout-dashboard"></i> <span class="nav-text">Dashboard</span></a></li>
+                    <li><a href="design.html"><i data-lucide="plus-square"></i> <span class="nav-text">New Design</span></a></li>
+                    <li><a href="inspirations.html"><i data-lucide="lightbulb"></i> <span class="nav-text">Inspirations</span></a></li>
+                    <li><a href="trends.html"><i data-lucide="trending-up"></i> <span class="nav-text">Trends</span></a></li>
+                    <li><a href="layouts.html"><i data-lucide="layout-template"></i> <span class="nav-text">Layouts</span></a></li>
+                    <li><a href="portfolio.html" class="active"><i data-lucide="briefcase"></i> <span class="nav-text">Portfolio</span></a></li>
+                    <li><a href="resources.html"><i data-lucide="book"></i> <span class="nav-text">Resources</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
+
+        <div class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="sidebar-toggle" id="sidebar-toggle">
+                        <i data-lucide="menu"></i>
+                    </button>
+                    <h2>My Portfolio</h2>
+                </div>
+                <div class="user-profile">
+                    <a href="#">Logout</a>
+                </div>
+            </header>
+
+
+
+            <main class="portfolio-content">
+
+
+                <div class="portfolio-controls">
+                    <div class="portfolio-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="designs">My Designs</button>
+                        <button class="filter-btn" data-filter="collections">Collections</button>
+                        <button class="filter-btn" data-filter="achievements">Achievements</button>
+                    </div>
+                    <div class="portfolio-actions">
+                        <button class="btn-share"><i data-lucide="share-2"></i> Share Portfolio</button>
+                        <button class="btn-upload"><i data-lucide="upload"></i> Upload Item</button>
+                    </div>
+                </div>
+
+
+
+                <div class="portfolio-grid">
+                    
+
+
+                    <div class="portfolio-card" data-category="designs">
+                        <img src="https://placehold.co/400x300/a2b9d1/fff?text=Evening+Gown" alt="Evening Gown Design">
+                        <div class="card-icon"><i data-lucide="image"></i></div>
+                        <div class="card-content">
+                            <h3>Evening Gown Sketch</h3>
+                            <span>My Designs</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="btn-icon" title="Edit"><i data-lucide="edit-3"></i></button>
+                            <button class="btn-icon" title="View"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="portfolio-card" data-category="collections">
+                        <img src="https://placehold.co/400x300/d1a2b9/fff?text=SS25+Collection" alt="Spring/Summer 2025 Collection">
+                        <div class="card-icon"><i data-lucide="layers"></i></div>
+                        <div class="card-content">
+                            <h3>Spring/Summer 2025</h3>
+                            <span>Collections</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="btn-icon" title="Edit"><i data-lucide="edit-3"></i></button>
+                            <button class="btn-icon" title="View"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="portfolio-card" data-category="designs">
+                        <img src="https://placehold.co/400x300/b9d1a2/333?text=Tech+Pack+(PDF)" alt="Technical Pack PDF">
+                        <div class="card-icon"><i data-lucide="file-text"></i></div>
+                        <div class="card-content">
+                            <h3>Denim Jacket Tech Pack</h3>
+                            <span>My Designs</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="btn-icon" title="Edit"><i data-lucide="edit-3"></i></button>
+                            <button class="btn-icon" title="View"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="portfolio-card" data-category="achievements">
+                        <img src="https://placehold.co/400x300/d1c6a2/fff?text=Award" alt="Design Award 2024">
+                        <div class="card-icon"><i data-lucide="award"></i></div>
+                        <div class="card-content">
+                            <h3>New Talent Award 2024</h3>
+                            <span>Achievements</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="btn-icon" title="Edit"><i data-lucide="edit-3"></i></button>
+                            <button class="btn-icon" title="View"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="portfolio-card" data-category="designs">
+                        <img src="https://placehold.co/400x300/a2d1c6/fff?text=3D+Render+Video" alt="3D Render Video">
+                        <div class="card-icon"><i data-lucide="video"></i></div>
+                        <div class="card-content">
+                            <h3>3D Render Walkthrough</h3>
+                            <span>My Designs</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="btn-icon" title="Edit"><i data-lucide="edit-3"></i></button>
+                            <button class="btn-icon" title="View"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="portfolio-card" data-category="collections">
+                        <img src="https://placehold.co/400x300/d1b0a2/fff?text=Knitwear+24" alt="Knitwear Collection 2024">
+                        <div class="card-icon"><i data-lucide="layers"></i></div>
+                        <div class="card-content">
+                            <h3>Knitwear 2024</h3>
+                            <span>Collections</span>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="btn-icon" title="Edit"><i data-lucide="edit-3"></i></button>
+                            <button class="btn-icon" title="View"><i data-lucide="eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rabbit and Stitch. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="portfolio.js"></script>
+
+</body>
+</html>

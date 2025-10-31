@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Rabbit and Stitch</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="resources.css">
+</head>
+<body>
+
+
+    <div class="studio-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Rabbit and Stitch</h1>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i data-lucide="layout-dashboard"></i> <span class="nav-text">Dashboard</span></a></li>
+                    <li><a href="design_studio.html"><i data-lucide="plus-square"></i> <span class="nav-text">New Design</span></a></li>
+                    <li><a href="inspirations.html"><i data-lucide="lightbulb"></i> <span class="nav-text">Inspirations</span></a></li>
+                    <li><a href="trends.html"><i data-lucide="trending-up"></i> <span class="nav-text">Trends</span></a></li>
+                    <li><a href="layouts.html"><i data-lucide="layout-template"></i> <span class="nav-text">Layouts</span></a></li>
+                    <li><a href="portfolio.html"><i data-lucide="briefcase"></i> <span class="nav-text">Portfolio</span></a></li>
+                    <li><a href="resources.html" class="active"><i data-lucide="book"></i> <span class="nav-text">Resources</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
+
+
+        <div class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="sidebar-toggle" id="sidebar-toggle">
+                        <i data-lucide="menu"></i>
+                    </button>
+                    <h2>Resources</h2>
+                </div>
+                <div class="user-profile">
+                    <a href="#">Logout</a>
+                </div>
+            </header>
+
+
+
+
+
+
+            <main class="resources-content">
+                <div class="resource-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="tools">Digital Tools</button>
+                    <button class="filter-btn" data-filter="fabric">Fabric Selection</button>
+                    <button class="filter-btn" data-filter="stitching">Stitching</button>
+                    <button class="filter-btn" data-filter="illustration">Illustration</button>
+                </div>
+
+
+
+                <section class="recommended-section">
+                    <h2>Recommended For You</h2>
+                    <div class="resource-grid recommended-grid">
+                        <div class="resource-card" data-category="tools">
+                            <div class="card-thumbnail" style="background-color: #D1E5F0;">
+                                <i data-lucide="tablet-smartphone"></i>
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-category">Digital Tools</span>
+                                <h3>Intro to 3D Design</h3>
+                                <p>Learn the basics of 3D garment modeling.</p>
+                            </div>
+
+
+                            <div class="card-actions">
+                                <button class="btn-preview"><i data-lucide="eye"></i> Preview</button>
+                                <button class="btn-download"><i data-lucide="download"></i></button>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="resource-card" data-category="fabric">
+                            <div class="card-thumbnail" style="background-color: #F8D7DA;">
+                                <i data-lucide="layers"></i>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="card-category">Fabric Selection</span>
+                                <h3>Sustainable Fabrics Guide</h3>
+                                <p>An e-book on eco-friendly textiles.</p>
+                            </div>
+
+                            <div class="card-actions">
+                                <button class="btn-preview"><i data-lucide="eye"></i> Preview</button>
+                                <button class="btn-download"><i data-lucide="download"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section class="all-resources">
+                    <h2>All Resources</h2>
+                    <div class="resource-grid">
+                        <div class="resource-card" data-category="illustration">
+                            <div class="card-thumbnail" style="background-color: #D4EDDA;">
+                                <i data-lucide="pencil-ruler"></i>
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-category">Illustration</span>
+                                <h3>Figure Drawing Templates</h3>
+                                <p>Downloadable croquis templates (PDF).</p>
+                            </div>
+
+
+                            <div class="card-actions">
+                                <button class="btn-preview"><i data-lucide="eye"></i> Preview</button>
+                                <button class="btn-download"><i data-lucide="download"></i></button>
+                            </div>
+                        </div>
+
+
+                        <div class="resource-card" data-category="stitching">
+                            <div class="card-thumbnail" style="background-color: #FFF3CD;">
+                                <i data-lucide="scissors"></i>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="card-category">Stitching</span>
+                                <h3>10 Essential Hand Stitches</h3>
+                                <p>Video tutorial for common stitches.</p>
+                            </div>
+
+                            <div class="card-actions">
+                                <button class="btn-preview"><i data-lucide="eye"></i> Preview</button>
+                                <button class="btn-download"><i data-lucide="download"></i></button>
+                            </div>
+                        </div>
+
+
+                        <div class="resource-card" data-category="fabric">
+                            <div class="card-thumbnail" style="background-color: #F8D7DA;">
+                                <i data-lucide="layers"></i>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="card-category">Fabric Selection</span>
+                                <h3>Fabric Weaves Explained</h3>
+                                <p>Reference guide to twill, satin, and plain weaves.</p>
+                            </div>
+
+                            <div class="card-actions">
+                                <button class="btn-preview"><i data-lucide="eye"></i> Preview</button>
+                                <button class="btn-download"><i data-lucide="download"></i></button>
+                            </div>
+                        </div>
+
+
+                        <div class="resource-card" data-category="tools">
+                            <div class="card-thumbnail" style="background-color: #D1E5F0;">
+                                <i data-lucide="palette"></i>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="card-category">Digital Tools</span>
+                                <h3>Color Palette Generator</h3>
+                                <p>A web-based tool for creating color schemes.</p>
+                            </div>
+
+                            <div class="card-actions">
+                                <button class="btn-preview"><i data-lucide="eye"></i> Preview</button>
+                                <button class="btn-download"><i data-lucide="download"></i></button>
+                            </div>
+                        </div>
+
+
+                         <div class="resource-card" data-category="stitching">
+                            <div class="card-thumbnail" style="background-color: #FFF3CD;">
+                                <i data-lucide="move-3d"></i>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="card-category">Stitching</span>
+                                <h3>Basic Pattern Making</h3>
+                                <p>E-book on drafting a simple bodice.</p>
+                            </div>
+                            
+                            <div class="card-actions">
+                                <button class="btn-preview"><i data-lucide="eye"></i> Preview</button>
+                                <button class="btn-download"><i data-lucide="download"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rabbit and Stitch. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="resources.js"></script>
+
+</body>
+</html>
